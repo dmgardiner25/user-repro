@@ -1,10 +1,18 @@
 {
-  "image": "mcr.microsoft/devcontainers/base",
+  "image": "mcr.microsoft.com/dotnet/sdk:6.0-jammy",
   "features": {
-  "ghcr.io/devcontainers/features/azure-cli:1": {
+    "ghcr.io/devcontainers/features/azure-cli:1": {
       "version": "latest",
-      "extensions": "account,alias,deploy-to-azure,functionapp,subscription,webapp",
       "installBicep": "true"
-    }
+    },
+    "ghcr.io/devcontainers/features/common-utils:2": {
+      "installZsh": true,
+      "installOhMyZsh": true,
+      "upgradePackages": true,
+      "username": "vscode",
+      "userUid": "1000",
+      "userGid": "1000"
+    },
+    "remoteUser": "vscode"
   }
 }
