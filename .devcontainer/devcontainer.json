@@ -1,7 +1,8 @@
 {
   "features": {
-  "ghcr.io/devcontainers/features/azure-cli:latest": {
-    "installBicep": "true"
+  "ghcr.io/devcontainers/features/azure-cli:1": {
+      "version": "latest",
+      "extensions": "account,alias,deploy-to-azure,functionapp,subscription,webapp"
     }
   }
 }
