@@ -1,0 +1,21 @@
+version: '3'
+services:
+  krypton-c-env:
+    build: .
+
+    init: true
+    privileged: true
+    
+    # Mounts the project folder to '/workspace'. While this file is in .devcontainer,
+    # mounts are relative to the first file in the list, which is a level up.
+    volumes:
+    - ${LOCAL_WORKSPACE_FOLDER:-../}:/work/libaos
+
+    # [Optional] Required for ptrace-based debuggers like C++, Go, and Rust
+    cap_add:
+      - SYS_PTRACE
+    security_opt:
+      - seccomp:unconfined
+
+#    user: aos-dev
+    command: sleep infinity
