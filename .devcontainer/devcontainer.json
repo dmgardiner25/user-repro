@@ -1,3 +1,31 @@
 {
-  "dockerFile": "Dockerfile"
+    "dockerComposeFile": "docker-compose.yml",
+    "service": "krypton-c-env",
+    "workspaceFolder": "/work/libaos",
+    "shutdownAction": "stopCompose",
+    "remoteUser": "aos-dev",
+    "remoteEnv": {
+        "LOCAL_WORKSPACE_FOLDER": "${localWorkspaceFolder}"
+    },
+    "features": {
+        "ghcr.io/devcontainers/features/common-utils:1": {
+            "username": "aos-dev",
+            "uid": "10000",
+            "gid": "10001",
+            "installZsh": false,
+            "installOhMyZsh": false,
+            "upgradePackages": true,
+            "nonFreePackages": false
+        },
+        "ghcr.io/devcontainers/features/docker-from-docker:1": {
+
+        }
+    },
+    "postCreateCommand": "conan profile detect && ./build.sh",
+    "extensions": [
+        "atlassian.atlascode", "ms-vscode.cpptools", "numaru.vscode-ceedling-test-adapter",
+        "twxs.cmake", "ms-azuretools.vscode-docker", "ms-vscode.cpptools-extension-pack",
+        "ban.troff", "SonkengMaldini.conanlight", "afri-bit.vsconan",
+        "ryanluker.vscode-coverage-gutters"
+    ]
 }
