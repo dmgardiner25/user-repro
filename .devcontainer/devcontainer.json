@@ -1,18 +1,7 @@
 {
-  "image": "mcr.microsoft.com/dotnet/sdk:6.0-jammy",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
   "features": {
-    "ghcr.io/devcontainers/features/azure-cli:1": {
-      "version": "latest",
-      "installBicep": "true"
-    },
-    "ghcr.io/devcontainers/features/common-utils:2": {
-      "installZsh": true,
-      "installOhMyZsh": true,
-      "upgradePackages": true,
-      "username": "vscode",
-      "userUid": "1000",
-      "userGid": "1000"
-    },
-    "remoteUser": "vscode"
+    "ghcr.io/devcontainers/features/docker-in-docker:1": {
+    }
   }
 }
