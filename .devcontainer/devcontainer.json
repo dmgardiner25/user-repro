@@ -1,10 +1,14 @@
 {
-    "name": "nfcore",
     "image": "ubuntu:focal",
 	"features": {
-		      "ghcr.io/devcontainers/features/nix:1": {
-		"multiUser": "false",
-		"packages": "pdm, kompose, (google-cloud-sdk.withExtraComponents [google-cloud-sdk.components.gke-gcloud-auth-plugin])"
+		      "ghcr.io/devcontainers/features/common-utils:2": {
+            "installZsh": "true",
+            "username": "vscode",
+            "uid": "1000",
+            "gid": "1000",
+            "upgradePackages": "true"
         }
-    }
+    },
+	   
+   "remoteUser": "vscode"
 }
