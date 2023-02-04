@@ -1,7 +1,7 @@
 version: '3.8'
 services:
   aist3410-mariadb:
-    network_mode: service:db
+    network_mode: host:db
     build: 
       context: .
       dockerfile: Dockerfile
