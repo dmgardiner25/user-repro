@@ -32,6 +32,5 @@
 	// "customizations": {},
 
 	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
-	"remoteUser": "${localEnv:GITHUB_USER}",
-	"containerUser": "${localEnv:GITHUB_USER}"
+	"remoteUser": "${localEnv:GITHUB_USER}"
 }
