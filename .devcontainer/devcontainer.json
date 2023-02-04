@@ -3,7 +3,7 @@
 
 	"dockerComposeFile": "docker-compose.yml",
 	"service": "aist3410-mariadb",
-	"workspaceFolder": "/workspaces",
+	"workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
 	"customizations": {
 		"vscode": {
 			"extensions": [
