@@ -1,7 +1,7 @@
 version: '3.8'
 services:
   aist3410-mariadb:
-    network_mode: host:db
+    network_mode: host
     build: 
       context: .
       dockerfile: Dockerfile
@@ -11,6 +11,7 @@ services:
 
 
   db:
+    network_mode: host
     image: mariadb:latest
     restart: unless-stopped
     volumes:
