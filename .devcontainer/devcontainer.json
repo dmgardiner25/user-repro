@@ -1,33 +1,8 @@
 // For format details, see https://aka.ms/devcontainer.json. For config options, see the
 // README at: https://github.com/devcontainers/templates/tree/main/src/ubuntu
 {
-	"name": "AstradotUbuntu",
-	"build": {
-            "dockerfile": "Dockerfile"
-    },
-	// Features to add to the dev container. More info: https://containers.dev/features.
+	"image": "mcr.microsoft.com/devcontainers/base:ubuntu",
 	"features": {
-		"ghcr.io/devcontainers/features/aws-cli:1": {},
-		"ghcr.io/devcontainers/features/rust:1": {},
-		"ghcr.io/rio/features/kustomize:1": {},
-		"ghcr.io/devcontainers-contrib/features/ansible:2.0.1": {}
-	},
-	"customizations": {
-		"vscode": {
-			"extensions": [
-				"golang.go",
-				"BazelBuild.vscode-bazel",
-				"redhat.vscode-yaml",
-				"GitHub.vscode-pull-request-github",
-				"bungcip.better-toml",
-				"redhat.vscode-xml",
-				"hashicorp.terraform"
-			]
-		}
+		"ghcr.io/devcontainers/features/docker-in-docker:2": {}
 	}
-	// Use 'forwardPorts' to make a list of ports inside the container available locally.
-	// "forwardPorts": [],
-
-	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
-	// "remoteUser": "root"
 }
