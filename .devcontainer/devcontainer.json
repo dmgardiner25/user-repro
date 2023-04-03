@@ -1,3 +1,12 @@
 {
-  "image": "ubuntu:focal"
+	"image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+	"customizations": {
+		"codespaces": {
+			"repositories": {
+				"github/codespaces": {
+					"permissions": "read-all"
+				}
+			}
+		}
+	}
 }
