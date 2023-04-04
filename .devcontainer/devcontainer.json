@@ -1,8 +1,5 @@
 {
 	"image": "mcr.microsoft.com/devcontainers/base:ubuntu",
-	"features": {
-		"ghcr.io/devcontainers/features/git:1": {}
-	},
 	"initializeCommand": "touch initialize1",
 	// "workspaceFolder": "/workspaces/1ES-doc",
 	// "initializeCommand": "mkdir -p ${localWorkspaceFolder}/../1ES-doc",
