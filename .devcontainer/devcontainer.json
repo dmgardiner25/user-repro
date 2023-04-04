@@ -3,5 +3,5 @@
 	"initializeCommand": "touch ini1",
 	"postCreateCommand": "sleep 30 && touch postCreate1",
 	"postStartCommand": "sleep 30 && touch postStart1",
-	"postAttachCommand": "sleep 30 && touch postAttach1"
+	"postAttachCommand": "touch postAttach1"
 }
