@@ -4,7 +4,7 @@
 		"ghcr.io/devcontainers/features/git:1": {}
 	},
 	"workspaceFolder": "/workspaces/1ES-doc",
-	"initializeCommand": "mkdir -p ${localWorkspaceFolder}/../1ES-doc && touch ${localWorkspaceFolder}/../1ES-doc /doc",
+	"initializeCommand": "mkdir -p ${localWorkspaceFolder}/../1ES-doc",
 	"postCreateCommand": "sleep 30 && touch postCreate1",
 	"postStartCommand": "sleep 30 && touch postStart1",
 	"postAttachCommand": "touch postAttach1"
