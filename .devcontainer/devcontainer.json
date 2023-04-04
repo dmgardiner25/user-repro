@@ -1,12 +1,7 @@
 {
 	"image": "mcr.microsoft.com/devcontainers/base:ubuntu",
-	"customizations": {
-		"codespaces": {
-			"repositories": {
-				"github/codespaces": {
-					"permissions": "read-all"
-				}
-			}
-		}
-	}
+	"initializeCommand": "touch ini1",
+	"postCreateCommand": "sleep 30 && postCreate1",
+	"postStartCommand": "sleep 30 && postStart1",
+	"postAttachCommand": "sleep 30 && postAttach1"
 }
