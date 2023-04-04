@@ -7,5 +7,5 @@
 	"postCreateCommand": "sleep 30 && touch postCreate1",
 	"postStartCommand": "sleep 30 && touch postStart1",
 	"postAttachCommand": "touch postAttach1",
-	"workspaceFolder": "${localWorkspaceFolder}/1ES-docs"
+	"workspaceFolder": "${localWorkspaceFolder}/../1ES-docs"
 }
