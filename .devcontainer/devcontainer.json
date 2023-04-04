@@ -1,7 +1,7 @@
 {
 	"image": "mcr.microsoft.com/devcontainers/base:ubuntu",
 	"initializeCommand": "touch ini1",
-	"postCreateCommand": "sleep 30 && postCreate1",
-	"postStartCommand": "sleep 30 && postStart1",
-	"postAttachCommand": "sleep 30 && postAttach1"
+	"postCreateCommand": "sleep 30 && touch postCreate1",
+	"postStartCommand": "sleep 30 && touch postStart1",
+	"postAttachCommand": "sleep 30 && touch postAttach1"
 }
